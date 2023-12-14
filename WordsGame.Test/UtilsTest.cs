@@ -9,5 +9,9 @@ public class UtilsTest
         Assert.Equal("", result);
     }
 
-        
+    [Fact]
+    public void Scramble_SingleCharacter(){
+        var result = Utils.Scramble("A");
+        Assert.Equal("A", result);
+    }
 }
