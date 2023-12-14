@@ -14,4 +14,13 @@ public class UtilsTest
         var result = Utils.Scramble("A");
         Assert.Equal("A", result);
     }
+
+    [Fact]
+    public void Scramble_TwoCharacters(){
+        var input = "AB";
+        var result = Utils.Scramble(input);
+        Assert.True(result == "AB" || result == "BA");
+        Assert.Contains("A", result);
+        Assert.Contains("B", result);
+    }
 }
