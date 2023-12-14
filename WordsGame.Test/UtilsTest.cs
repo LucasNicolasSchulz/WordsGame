@@ -3,8 +3,11 @@ namespace WordsGame.Test;
 public class UtilsTest
 {
     [Fact]
-    public void TestNothing()
+    public void Scramble_EmptyString()
     {
-        Assert.True(false);
+        var result = Utils.Scramble("");
+        Assert.Equal("", result);
     }
+
+        
 }
